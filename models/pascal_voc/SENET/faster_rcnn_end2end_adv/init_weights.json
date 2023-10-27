@@ -1,0 +1,14 @@
+[
+    {
+      "prototxt"  : "models/pascal_voc/SENET/faster_rcnn_end2end_adv_pretrain/train_senet.prototxt",
+      "model"     : "/xxx/output/senet_pretrain/faster_rcnn_adv_pretrain_iter_10000.caffemodel",
+      "copy_ops"  : {
+        "source"  : ["conv6_mask", "conv7_mask", "conv8_mask", "conv9_mask", "conv10_mask"],
+        "dest"    : ["conv6_mask", "conv7_mask", "conv8_mask", "conv9_mask", "conv10_mask"],
+        "reshape" : [0, 0, 0, 0, 0]
+      }
+    }
+    
+  ] 
+  
+  

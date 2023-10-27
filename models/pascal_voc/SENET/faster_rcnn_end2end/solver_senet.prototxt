@@ -1,0 +1,27 @@
+train_net: "models/pascal_voc/SENET/faster_rcnn_end2end/train_senet.prototxt"
+#test_net: "models/pascal_voc/SENET/faster_rcnn_end2end/test.prototxt"
+base_lr: 0.001
+#lr_policy: "multistep"
+gamma: 0.5
+#stepvalue: 20000
+#stepvalue: 40000
+#stepvalue: 50000
+#初始学习率策略
+lr_policy: "step"
+stepsize: 20000
+display: 30
+average_loss: 100
+# iter_size: 1
+momentum: 0.9
+weight_decay: 0.0005
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+snapshot:2050
+# We still use the snapshot prefix, though
+#snapshot_prefix: "/home/xxx/adversarial-frcnn-master_change/output/default/voc_2007_trainval/faster_rcnn_std"
+snapshot_prefix: "/xxx/output/faster_rcnn_senet/faster_rcnn_senet"
+iter_size: 4
+#debug_info: true
+
+#test_interval:1
+
